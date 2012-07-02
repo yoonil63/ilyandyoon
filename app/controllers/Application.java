@@ -12,19 +12,19 @@ public class Application extends Controller {
     }
  
     public static Result index2() {
-        return ok(index2.render());
+        return ok(wedding.render());
     }  
     
     public static Result index3() {
-        return ok(index3.render());
+        return ok(trip.render());
     }  
 
     public static Result index4() {
-        return ok(index4.render());
+        return ok(accomodation.render());
     }  
     
     public static Result index5() {
-        return ok(index5.render());
+        return ok(information.render());
     }   
     
 }
