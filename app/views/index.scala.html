@@ -34,6 +34,7 @@
            
     </head>
     <body id="page1">
+     
         <div class="body1">
             <div class="main">
                 <!-- header -->
@@ -43,7 +44,7 @@
                             <li><a href="https://www.facebook.com/groups/443334069031955/" class="normaltip" title="Facebook"><img src="@routes.Assets.at("images/icon1.png")" alt=""></a></li>
                             <li><a href="@routes.SignUp.blank()" class="normaltip" title="Log in">Log in</a></li>
                         </ul>			
-                        
+                        <iframe width="560" height="25" src="http://www.youtube.com/watch?v=lm0iHLqQzmI&feature=g-all-pls" frameborder="0" allowfullscreen></iframe>
                         <div style="margin-top:10px" id="soundPlayer">
                             <!-- <span style="float:left">Sound File:</span><span id="sound_file_name"> &nbsp;</span>
                             <a href="javascript://"  id="stopLink">
@@ -53,9 +54,8 @@
                                 <audio id="player2" src="" type="audio/mp3" controls="controls">		
                                 </audio>
                             Source : Honey Soundtrack. Mark Ronson - Ooh Wee-->
-                            <audio id="player2" src="@routes.Assets.at("images/Honey.mp3")" type="audio/mp3" controls="controls">		
-                            </audio>
-                        
+                           <audio id="player2" src="@routes.Assets.at("images/Honey.mp3")" type="audio/mp3" controls="controls">	
+                     
                             Source : Honey Soundtrack. Mark Ronson - Ooh Wee
                            
                         </div>
@@ -85,14 +85,16 @@
                 <!-- / header -->
             </div>
         </div>
-                                <script>
-                                $('audio,video').mediaelementplayer();
-                                    </script>
         <script type="text/javascript">
             $(document).ready(function() {
                               $("div.mejs-container .mejs-button").trigger('click');
-                              });
+                              });             
             </script>
+   
+                                <script>
+                                $('audio,video').mediaelementplayer();
+                                  
+                                </script>
         <script type="text/javascript" charset="utf-8"> Cufon.now(); </script>
         <script type="text/javascript" charset="utf-8">
             $(window).load(function() {
