@@ -1,0 +1,25 @@
+@(user: User)
+
+@main(Html("Account created!"), nav = "signup") {
+
+    <h6>Username</h6>
+    
+    <p>
+        @user.username
+    </p>
+    
+    <h6>Password</h6>
+    
+    <p>
+        @user.password
+    </p>
+
+    <p>
+        @if(user.profile.age == null) {
+            <em>Not specified</em>
+        } else {
+            @user.profile.age
+        }
+    </p>
+    
+}

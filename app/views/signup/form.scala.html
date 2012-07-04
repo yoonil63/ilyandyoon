@@ -1,0 +1,25 @@
+@(signupForm: Form[User])
+
+@import helper._
+@import helper.twitterBootstrap._
+
+@title = {
+    <h2>Sign Up</h2>
+}
+
+@main(title, nav = "signup") {
+    
+    @helper.form(action = routes.SignUp.submit) {
+        
+   
+            
+    
+        
+        <div class="actions">
+            <input type="submit" class="btn primary" value="Log in">
+            <a href="@routes.Application.index" class="btn">Cancel</a>
+        </div>
+        
+    }
+    
+}

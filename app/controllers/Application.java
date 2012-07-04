@@ -26,5 +26,8 @@ public class Application extends Controller {
     public static Result index5() {
         return ok(information.render());
     }   
-    
+
+    public static Result index6() {
+        return ok(ontacts.render());
+    }   
 }

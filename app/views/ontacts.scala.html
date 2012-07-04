@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+            <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/reset.css")">  
+                <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/layout.css")"> 
+                    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/style.css")"> 
+                        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/nivo-slider.css")"> 
+                            <link rel="stylesheet" href="@routes.Assets.at("stylesheets/mediaelementplayer.min.css")" />
+                            <script src="@routes.Assets.at("javascripts/jquery-1.6.js")" type="text/javascript"></script>
+                            <script src="@routes.Assets.at("javascripts/cufon-yui.js")" type="text/javascript"></script>
+                            <script src="@routes.Assets.at("javascripts/cufon-replace.js")" type="text/javascript"></script>
+                            <script src="@routes.Assets.at("javascripts/Josefin_Sans_400.font.js")" type="text/javascript"></script>
+                            <script src="@routes.Assets.at("javascripts/Tangerine_700.font.js")" type="text/javascript"></script>
+                            <script src="@routes.Assets.at("javascripts/atooltip.jquery.js")" type="text/javascript"></script>
+                            <script src="@routes.Assets.at("javascripts/jquery.nivo.slider.pack.js")" type="text/javascript"></script>
+                            <script src="@routes.Assets.at("javascripts/jquery.nivo.slider.js")" type="text/javascript"></script>
+                            <script src="@routes.Assets.at("javascripts/script.js")" type="text/javascript"></script>
+                            <script src="@routes.Assets.at("javascripts/jquery.sound.js")" type="text/javascript"></script>
+                            <script src="@routes.Assets.at("javascripts/mediaelement-and-player.min.js")"></script>
+                            <!--[if lt IE 9]>
+                             <script src="@routes.Assets.at("javascripts/javascripts/html5.js")" type="text/javascript"></script>
+                             <style type="text/css">
+                             .aToolTip, .box1, .box1 .inner { behavior: url(@routes.Assets.at("javascripts/javascripts/PIE.htc")); }
+                             </style>
+                             <![endif]-->
+                            <!--[if lt IE 7]>
+                             <div style='clear:both;text-align:center;position:relative'>
+                             <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0" alt="" /></a>
+                             </div>
+                             <![endif]-->
+</head>
+<body id="page6">
+<div class="body1">
+	<div class="main">
+<!-- header -->
+        <header>
+            <div class="wrapper"><link rel="shortcut icon" type="image/png" href=>
+                <ul id="icons">
+                    <li><a href="https://www.facebook.com/groups/443334069031955/" class="normaltip" title="Facebook"><img src="@routes.Assets.at("images/icon1.png")" alt=""></a></li>
+                    <li><a href="@routes.SignUp.blank()" class="normaltip" title="Log in">Log in</a></li>
+                </ul>			
+                
+                <div style="margin-top:10px" id="soundPlayer">
+                    <!-- <span style="float:left">Sound File:</span><span id="sound_file_name"> &nbsp;</span>
+                     <a href="javascript://"  id="stopLink">
+                     <img src="@routes.Assets.at("images/stop.png")" alt="Stop" title="Stop" />
+                     </a>
+                     
+                     <audio id="player2" src="https://dl.dropbox.com/u/20057496/Honey%20Soundtrack%20Ooh%20Wee%20%28DjSerryck%29.mp3" type="audio/mp3" controls="controls">		
+                     </audio>
+                     Source : Honey Soundtrack. Mark Ronson - Ooh Wee-->
+                    <audio id="player2" src="https://dl.dropbox.com/u/20057496/Honey%20Soundtrack%20Ooh%20Wee%20%28DjSerryck%29.mp3" type="audio/mp3" controls="controls">		
+                    </audio>
+                    Source : Honey Soundtrack. Mark Ronson - Ooh Wee
+                    
+                </div>
+                </div>
+            <div class="wrapper">
+                <h1><a href="@routes.Application.index()" id="logo"></a></h1>
+				<nav>
+					<ul id="menu">
+                            <li class="first" ><a href="@routes.Application.index2()">Wedding</a></li>
+                            <li><a href="@routes.Application.index3()">Trip</a></li>
+                            <li ><a href="@routes.Application.index4()">Accomodation</a></li>
+                            <li><a href="@routes.Application.index5()">Info</a></li>
+                    
+						<li id="menu_active"><a href="@routes.Application.index6()">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+<!-- / header -->
+	</div>
+</div>
+<div class="body3">
+	<div class="main">
+<!-- content -->
+		<article id="content">
+			<div class="wrapper">
+				<div class="pad">
+					<div class="wrapper">
+						<section class="col1">
+							<h2>Contact <span>Form</span></h2>
+							<form id="ContactForm">
+								<div>
+									<div  class="wrapper">
+										<span>Your Name:</span>
+										<input type="text" class="input" >
+									</div>
+									<div  class="wrapper">
+										<span>Your E-mail:</span>
+										<input type="text" class="input" >								
+									</div>
+									<div  class="textarea_box">
+										<span>Your Message:</span>
+										<textarea name="textarea" cols="1" rows="1"></textarea>								
+									</div>
+								
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</article>
+<!-- content / -->
+	</div>
+</div>
+</div>
+    <script>
+        $('audio,video').mediaelementplayer();
+        </script>
+    <script type="text/javascript">
+        
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-33073059-1']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+        
+        </script>
+</body>
+</html>
